@@ -489,10 +489,10 @@ hr {
 
 @media screen and (max-width: 560px) {
     .galary ul li {
-        width: calc(50% - 20px); /* 모바일 화면에서 2개씩 나열 */
+        width: calc(50% - 20px); /* 모바일 화면에서 2개씩 나열 */   
     }
 }
-/*
+
 .pic,
 .rkgk,
 .cm {
@@ -557,8 +557,8 @@ hr {
     object-fit: cover;
     display: block;
 }
-*/
 
+/*
 .pic,
 .rkgk,
 .cm {
@@ -618,3 +618,4 @@ max-height: 100%;
 object-fit: cover;
 display: block;
 }
+*/
