@@ -1,0 +1,558 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    background-image: url('C:/Users/LG/Desktop/SEI/CITRUS/intro/img/forest.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 85%;
+}
+
+.header {
+    height: 75px;
+    background-color: #fff;
+    z-index: 1;
+    position: relative;
+}
+
+.font {
+    margin: 0;
+    padding: 15px;
+    font-family: sans-serif;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #eee;
+    font-size: 10em;
+    font-family: 'Brush Script MT', cursive;
+    z-index: 1;
+}
+
+.image-overlay {
+    position: absolute;
+    top : 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.image-overlay img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.banner-overlay img {
+    max-width: 100%;
+    max-height: auto;
+    width: 80vw;
+    height: 10vh;
+}
+
+.profil-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    z-index: 1;
+}
+
+.profil-overlay img {
+    width: 521px;
+    height: 409px;
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+    display: block;
+}
+/*
+.banner-overlay img {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: auto;
+    width: 80vw;
+    height: 10vh;
+}
+*/
+.pairname-overlay {
+    position: absolute;
+    top : 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.pairname-overlay img {
+    max-width: 100%;
+    height: auto;
+    width: 250px;
+}
+
+.sentence-overlay {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.sentence-overlay img {
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.main-overlay {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.main-overlay img {
+    max-width: 100%;
+    height: auto;
+    width: 750px;
+}
+
+.box {
+    width: 10vw;
+    height: 70vh;
+    background-color: #172601;
+    opacity: 75%;
+    position: absolute;
+    top: 52.5%;
+    left: 17.5%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    border-radius: 15px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 80%;
+    height: 0;
+    top: 5%;
+    padding-bottom: 80%;
+    border-radius: 50%;
+    background-color: #ccc;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: auto;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+hr {
+    position: absolute;
+    top: 32.5%;
+    width: 90%;
+    border: 1px solid #3e5902;
+}
+
+.counter {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Set text color */
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px; /* Optional: for better spacing */
+    border-radius: 10px; /* Optional: for a rounded border */
+}
+
+@media screen and (max-width: 1023px) {
+    .counter {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .counter {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+}
+
+.audio-container {
+    position: absolute;
+    top: calc(50% + 50px); /* Adjust the value to position the audio below the counter */
+    left: 75%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.menu {
+    display: block;
+    overflow: hidden;
+    width: 200px;
+    color: #fff;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    transform: translate(0%, 15%);
+}
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu a, .menu > label {
+    display: block;
+    height: 25px;
+    padding: 8px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #172601;
+}
+.menu ul li:hover, .menu > label:hover {
+    background-color: #fff;
+    color: #182801;
+    border-radius: 10px;
+}
+.menu div {
+    position: absolute; /* 절대 위치로 텍스트 고정 */
+    left: 50px;
+    line-height: 1.5;
+    font-size: 1em;
+    font-family: 'Noto Sans KR';
+    padding: 0 0 0 20px; /* 패딩 20p로 축소 */
+}
+
+.menu ::before {
+    font-family: 'Material Icons';
+    font-size: 1.5em;
+    float: left;
+    clear: left;
+}
+
+.menu label::before{ content: '\e5d2'; }
+.menu li:nth-child(1) a::before{ content: '\e88a'; }
+.menu li:nth-child(2) a::before{ content: '\eb40'; }
+.menu li:nth-child(3) a::before{ content: '\e413'; }
+.menu li:nth-child(4) a::before{ content: '\e02f'; }
+.menu li:nth-child(5) a::before{ content: '\e7fd'; }
+.menu li:nth-child(6) a::before{ content: '\e192'; }
+
+.menu-icon {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 10px;
+    vertical-align: middle;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 1023px) {
+    .menu {
+        width: 60px;
+    }
+    .menu a {
+        color: transparent;
+    }
+    .menu a::before {
+        color: #fff; /* Ensures the icon color remains visible */
+    }
+}
+
+@media screen and (max-width:560px) {
+    .menu #expand-menu:not(:checked) ~ ul {
+        display: none;
+    }
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/*
+.galary {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 20px;
+}
+
+.galary ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.galary ul li {
+    display: inline-block;
+}
+
+.item-box {
+    width: 300px;
+    height: 300px;
+    background-color: #eee;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+*/
+
+.galary {
+    display: block;
+    overflow: hidden;
+    width: 50%; /* 수정된 가로 너비 */
+    max-width: 800px;
+    height: 50vh;
+    margin: auto;
+    color: #172601;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, 75%); /*(x,y)*/
+}
+
+.galary ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* 이미지를 가로로 배열 */
+    flex-wrap: wrap; /* 넘치면 줄바꿈 */
+    justify-content: space-between; /* 여백을 최대한 활용하여 이미지 간격을 조절 */
+}
+
+.galary ul li {
+    width: calc(33.33% - 10px); /* 갤러리 아이템의 너비 */
+    text-align: center;
+}
+
+.galary ul li a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.galary ul li img {
+    width: 100%; /* 이미지가 부모 요소에 맞게 확장되도록 */ 
+    height: auto;
+    border-radius: 10px; /* 이미지에 둥근 테두리 */
+}
+.galary ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.item-box {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item-box .image-wrapper {
+    border-radius: 20px 20PX 0 0;
+}
+
+.item-box .text-wrapper {
+    padding: 10px;
+}
+
+.item-box p {
+    margin: 0;
+}
+
+.image-wrapper img {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    border: 20px;
+}
+
+.art
+.commission 
+.picrew {
+    width: calc(33.33% - 10px); /* 갤러리 아이템의 너비 */
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 560px) {
+    .galary ul li {
+        width: calc(50% - 20px); /* 모바일 화면에서 2개씩 나열 */
+    }
+}
+
+.pic,
+.rkgk,
+.cm {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: 50%;
+    height: 40%;
+    overflow-y: auto;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pic ul,
+.rkgk ul,
+.cm ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pic ul li,
+.rkgk ul li,
+.cm ul li {
+    display: inline-block;
+}
+
+.pic-box,
+.rkgk-box,
+.cm-box {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    overflow: auto;
+    width: 100%;
+    height: 300px;
+}
+
+.pic-wrapper,
+.rkgk-wrapper, 
+.cm-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.pic-wrapper img,
+.rkgk-wrapper img, 
+.cm-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+}
