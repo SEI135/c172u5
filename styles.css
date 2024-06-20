@@ -6,7 +6,7 @@ html, body {
 }
 
 .background {
-    background-image: url('C:/Users/LG/Desktop/SEI/CITRUS/intro/img/forest.jpg');
+    background-image: url('img\forest.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -264,12 +264,12 @@ hr {
     border-radius: 10px;
 }
 .menu div {
-    position: absolute; /* Àı´ë À§Ä¡·Î ÅØ½ºÆ® °íÁ¤ */
+    position: absolute; /* ì ˆëŒ€ ìœ„ì¹˜ë¡œ í…ìŠ¤íŠ¸ ê³ ì • */
     left: 50px;
     line-height: 1.5;
     font-size: 1em;
     font-family: 'Noto Sans KR';
-    padding: 0 0 0 20px; /* ÆĞµù 20p·Î Ãà¼Ò */
+    padding: 0 0 0 20px; /* íŒ¨ë”© 20pë¡œ ì¶•ì†Œ */
 }
 
 .menu ::before {
@@ -409,7 +409,7 @@ hr {
 .galary {
     display: block;
     overflow: hidden;
-    width: 50%; /* ¼öÁ¤µÈ °¡·Î ³Êºñ */
+    width: 50%; /* ìˆ˜ì •ëœ ê°€ë¡œ ë„ˆë¹„ */
     max-width: 800px;
     height: 50vh;
     margin: auto;
@@ -427,13 +427,13 @@ hr {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; /* ÀÌ¹ÌÁö¸¦ °¡·Î·Î ¹è¿­ */
-    flex-wrap: wrap; /* ³ÑÄ¡¸é ÁÙ¹Ù²Ş */
-    justify-content: space-between; /* ¿©¹éÀ» ÃÖ´ëÇÑ È°¿ëÇÏ¿© ÀÌ¹ÌÁö °£°İÀ» Á¶Àı */
+    display: flex; /* ì´ë¯¸ì§€ë¥¼ ê°€ë¡œë¡œ ë°°ì—´ */
+    flex-wrap: wrap; /* ë„˜ì¹˜ë©´ ì¤„ë°”ê¿ˆ */
+    justify-content: space-between; /* ì—¬ë°±ì„ ìµœëŒ€í•œ í™œìš©í•˜ì—¬ ì´ë¯¸ì§€ ê°„ê²©ì„ ì¡°ì ˆ */
 }
 
 .galary ul li {
-    width: calc(33.33% - 10px); /* °¶·¯¸® ¾ÆÀÌÅÛÀÇ ³Êºñ */
+    width: calc(33.33% - 10px); /* ê°¤ëŸ¬ë¦¬ ì•„ì´í…œì˜ ë„ˆë¹„ */
     text-align: center;
 }
 
@@ -444,9 +444,9 @@ hr {
 }
 
 .galary ul li img {
-    width: 100%; /* ÀÌ¹ÌÁö°¡ ºÎ¸ğ ¿ä¼Ò¿¡ ¸Â°Ô È®ÀåµÇµµ·Ï */ 
+    width: 100%; /* ì´ë¯¸ì§€ê°€ ë¶€ëª¨ ìš”ì†Œì— ë§ê²Œ í™•ì¥ë˜ë„ë¡ */ 
     height: auto;
-    border-radius: 10px; /* ÀÌ¹ÌÁö¿¡ µÕ±Ù Å×µÎ¸® */
+    border-radius: 10px; /* ì´ë¯¸ì§€ì— ë‘¥ê·¼ í…Œë‘ë¦¬ */
 }
 .galary ul {
     list-style: none;
@@ -482,13 +482,13 @@ hr {
 .art
 .commission 
 .picrew {
-    width: calc(33.33% - 10px); /* °¶·¯¸® ¾ÆÀÌÅÛÀÇ ³Êºñ */
+    width: calc(33.33% - 10px); /* ê°¤ëŸ¬ë¦¬ ì•„ì´í…œì˜ ë„ˆë¹„ */
     margin-bottom: 20px;
 }
 
 @media screen and (max-width: 560px) {
     .galary ul li {
-        width: calc(50% - 20px); /* ¸ğ¹ÙÀÏ È­¸é¿¡¼­ 2°³¾¿ ³ª¿­ */
+        width: calc(50% - 20px); /* ëª¨ë°”ì¼ í™”ë©´ì—ì„œ 2ê°œì”© ë‚˜ì—´ */
     }
 }
 
